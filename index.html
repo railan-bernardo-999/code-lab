@@ -13,9 +13,15 @@
     <div class="wrapper">
         <div class="container">
             <div class="col-6">
-                <input id="hours" value="00" />
-                <input id="minutes" value="00" />
-                <input id="seconds" value="00" />
+                <input id="hours" maxlength="2" value="00"
+                 oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                />
+                <input id="minutes" maxlength="2" value="00" 
+                 oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                />
+                <input id="seconds" maxlength="2" value="00" 
+                 oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                />
             </div>
             <div class="col-6">
                 <button onclick="startTimer()" class="start">Iniciar</button>
