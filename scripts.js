@@ -32,6 +32,8 @@ function notification() {
             body: "O seu tempo acabou.",
             icon: "https://cdn-icons-png.flaticon.com/512/2088/2088617.png"
         });
+    }else{
+        alert("Notificações não estão permitidas.");
     }
 }
 
